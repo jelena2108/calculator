@@ -4,13 +4,11 @@
         $a=$_GET['number1']; 
     }else{
      $a=0;
-       // echo "Unesi broj u polje 1."."<br>";
     }
     if(isset($_GET['number2'])&& !empty($_GET['number2'])){
         $b=$_GET['number2']; 
     }else{
         $b=0;
-           // echo "Unesi broj u polje 2."."<br>";
     } 
 if(isset($_GET['select'])){
     $select=$_GET['select'];
@@ -50,7 +48,7 @@ public function calculate($select){
 $res=new Calculator;
 $res->input($a,$b);
 $res->calculate($select);
- //$res->render();
+
 ?>
 <!DOCTYPE html>
 <html>
